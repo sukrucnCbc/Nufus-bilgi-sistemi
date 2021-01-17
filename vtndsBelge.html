@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nüfus Bilgi Sistemi</title>
+    <link type="" href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    
+    <style>
+        body {
+    font-family: 'Josefin Sans';
+    color: #272829;
+  }
+  a {
+color: silver;
+text-decoration: none;
+}
+
+a:hover {
+color:silver;
+text-decoration: none;
+
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: "Raleway", sans-serif;
+
+}
+
+.dropdown-menu{
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: #040b14;
+    overflow-y: auto;
+  }
+  
+  #header .profile img {
+    margin: 15px auto;
+    display: block;
+    width: 150px;
+    border: 5px double #565252 ;
+    border-radius:50%;
+  }
+  
+  #header .profile h1 {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins";
+  }
+  
+  
+  
+  
+  
+  #main {
+    margin-left: 300px;
+  }
+  
+  @media (max-width: 1199px) {
+    #header {
+      left: -300px;
+    }
+    #main {
+      margin-left: 0;
+    }
+  }
+  /* Desktop Navigation */
+.nav-menu {
+  padding-top: 30px;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a {
+  display: flex;
+  align-items: center;
+  
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 22px;
+}
+
+
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  text-decoration: none;
+  
+  font-size: 25px;
+}
+.content1{
+  background-color: whitesmoke;
+  border:2px solid #149ddd;
+  border-radius: 5px;
+  width: 48%;
+  height: 700px;
+  position: absolute;
+  float: left;
+  margin:5px;
+  margin-top: 0;
+  padding: 0px;
+
+
+}
+.content2{
+  background-color: whitesmoke;
+  border:2px solid #149ddd;
+  border-radius: 5px;
+  width: 50%;
+  height: 270px;
+  position: relative;
+  float: right;
+  padding: 5px;
+
+}
+
+
+.content3{
+    background-color: whitesmoke;
+  border:2px solid #149ddd;
+  border-radius: 5px;
+  width: 50%;
+  height: 270px;
+  position: absolute;;
+  float: right;
+  padding: 5px;
+  margin-left: 493px;
+  margin-top: 10px;
+
+
+}
+#baslik{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 15px;
+  
+}
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Ana
+--------------------------------------------------------------*/
+
+
+
+.container{
+    background-color:whitesmoke;
+    width: 78%;
+    float:right;
+    padding: 25px;
+}
+
+.icAnaDiv{
+  padding: 5px;
+}
+
+
+
+
+.kayit .form-check{
+    
+    float: left;
+    margin: 10px;
+}
+
+.sonuc{
+    background-color:#eceff2;
+    margin-top: 10px;
+    height: 150px;
+    
+}
+
+a{
+    margin-top: 350px;
+    margin-left: 550px;
+
+}
+
+    </style>
+
+</head>
+<body>
+  
+
+   
+    <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/avatar.svg" alt="" class="img-fluid">
+        <h1 class="text-light"><a href="#">NÜFUS KAYIT BİLGİ SİSTEMİ</a></h1>
+
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="vatandasAna.html"><i class="bx bx-home"></i> <span>Anasayfa</span></a></li>
+          <li><a href="vtndsSorgu.php"><i class="bx bx-server"></i> <span > Adres Kaydı Sorgula</a></li></span>
+          <li><a href="vtndsBelge.html"><i class="bx bx-server"></i> <span style="color: #149ddd;"> Belge İşlemleri</a></li></span>
+          <li><a href="eRandevu.php"><i class="bx bx-server"></i> <span > e-Randevu</a></li></span>
+          <li><a href="index.php"><i class="bx bx-envelope"></i> Çıkış</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="ana" class="ana">
+    <div class="container">
+        
+        <div class="card">
+            <div id="baslik">
+                <h1 style="font-family: 'Poppins', sans-serif;">BELGE İŞLEMLERİ</h1>
+                <p style="font-family: 'Poppins', sans-serif;">Belge işlemlerinde istenen gerekli evraklar aşağıda belirtilmiştir. Bu evraklarla beraber en yakın nüfus müdürlüklerinden 
+                    işlem yapabilirsiniz. İşlemler için sıra beklemek istemiyorsanız randevunuzu şimdi alınız.
+                </p>
+            </div>
+            <div class="icAnaDiv">
+                <div class="content1">
+                  <div class="icBaslik">
+                      <label style="font-size:x-large;" for="">Kimlik Kartı</label>
+                      
+                        <ol style="list-style: square;">
+                            <li style="font-weight: bold;"> Yeni doğan kimlik kartı için:</li>
+                            <ul>
+                                <li>Anne veya babanın şahsen ve Nüfus Cüzdanı/Kimlik kartı ile başvurusu</li>
+                                <li>Doğum Belgesi</li>
+                            
+                            </ul><br><br>
+                            <li style="font-weight: bold;">Yeni Kimlik Kartı almak için, 15-18 yaş aralığındakiler için başvuru belgeleri ve gereklilikler:
+                            </li>
+                                <ul>
+                                    <li>Nüfus Cüzdanı</li>
+                                    <li>Banka dekontu</li>
+                                    <li>Biyometrik Fotoğraf (1 adet, son 6 ay içinde çekilmiş)</li>
+                                    <li>Velisi (Annesi veya Babası)</li>
+                                </ul><br><br>
+                            <li style="font-weight: bold;">Yeni Kimlik Kartı almak için, 18 yaşından büyükler için başvuru belgeleri ve gereklilikler:</li>    
+                                <ul>
+                                    <li>Nüfus Cüzdanı</li>
+                                    <li>Biyometrik Fotoğrafı</li>
+                                    <li>Banka dekontu</li>
+                                </ul><br><br>
+                            <li style="font-weight: bold;">Nüfus Cüzdanı KAYIPSA</li>    
+                                <ul>
+                                    <li>Fotoğraflı Pasaport veya Sürücü Belgesi veya MEB-ÖSYM Sınav Giriş Belgesi. </li>
+                                    <li>Biyometrik Fotoğraf</li>
+                                    <li>Banka dekontu</li>
+                                </ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        </ol>    
+           
+                    
+                   
+      
+                    
+
+                  </div>
+                  
+                  </div>    
+                    
+                  <div class="content2">
+                    <div class="icBaslik">
+                        <label style="font-size:x-large;" for="">Ehliyet</label>
+                        <ul>
+                            <li>Kimlik Belgesi</li>
+                            <li>Sürücü Sertifikası</li>
+                            <li>Öğrenim Belgesi, yurtdışından alınan öğrenim belgelerinin noter tasdikli tercümesi</li>
+                            <li>Sürücü Sağlık Raporu</li>
+                            <li>Sürücü belgesi değerli kâğıt ve harç bedeli, vakıf payı</li>
+                            <li>1 adet biyometrik fotoğraf</li>
+                            <li>Kan grubunu belirtir belge veya sözlü beyanı</li>
+                        </ul>
+                    
+                      
+                     
+                        
+                    </div>
+                </div>
+
+
+
+                <div class="content3">
+                    <div class="icBaslik">
+                        <label style="font-size:x-large;" for="">Pasaport</label>
+                        <ul>
+                            <li>Kimlik Belgesi</li>
+                            <li>Pasaport Harç Makbuzu ve pasaport cüzdan bedeli makbuzu</li>
+                            <li>2 adet biyometrik fotoğraf</li>
+                            <li>Harçsız pasaport alacaklar için Öğrenci belgesi </li>
+                            <li>Ergen olmayan kişiler için yada kısıtlı kişiler için muvafakat belges,</li>
+                            <li>Daha önceden pasaportu olanların eski pasaportu</li>
+                            
+                        </ul>
+                    
+                      
+                     
+                        
+                    </div>
+                </div>
+            <a class="btn btn-primary" href="eRandevu.php" role="button">Randevunuzu hemen almak için tıklayın 🔗</a>
+           
+                
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       </div>
+      </div>  
+  </section>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
